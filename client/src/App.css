@@ -1752,10 +1752,11 @@
   
     height: 70px;
     width: 20px;
+
     
     background: #005fff;
     position: absolute;
-    right: -2%;
+    right: 99%;
     top: 60%;
     border-radius: 20%;
     z-index: 2;
@@ -1844,13 +1845,13 @@
   
     .channel-search__results {
       top: 100%;
-      left: 5%;
+      left: 99%%;
     }
   }
   
   @media screen and (max-width: 650px) {
     .channel-list__container-toggle {
-      right: -4%;
+      right: 99%%;
     }
   }
 
@@ -1862,7 +1863,7 @@
     }
   
     .channel-list__container-toggle {
-      right: -4%;
+      right: 99%;
     }
   }
   
