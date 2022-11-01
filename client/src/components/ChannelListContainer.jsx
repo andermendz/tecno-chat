@@ -54,7 +54,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
 
     return (
         <>
-            
+      
             <div className="channel-list__list__wrapper">
                 <CompanyHeader />
                 <ChannelSearch setToggleContainer={setToggleContainer} />
@@ -107,7 +107,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
                     )}
                 />
             </div>
-            <SideBar logout={logout} />
+                  <SideBar logout={logout} />
         </>
     );
 }
@@ -126,7 +126,7 @@ const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) =>
             </div>
 
             <div className="channel-list__container-responsive"
-                style={{ right: toggleContainer ? "-85%" : "0%", backgroundColor: "#005fff"}}
+                style={{ left: toggleContainer ? "0%" : "-85%", backgroundColor: "#005fff"}}
             >
                 <div className="channel-list__container-toggle" onClick={() => setToggleContainer((prevToggleContainer) => !prevToggleContainer)}>
                 </div>

@@ -35,6 +35,14 @@ const App = () => {
     return (
         <div className="app__wrapper">
             <Chat client={client} theme="team light">
+
+            <ChannelListContainer 
+                    isCreating={isCreating}
+                    setIsCreating={setIsCreating}
+                    setCreateType={setCreateType}
+                    setIsEditing={setIsEditing}
+                />
+                
                 <ChannelContainer 
                     isCreating={isCreating}
                     setIsCreating={setIsCreating}
@@ -42,12 +50,7 @@ const App = () => {
                     setIsEditing={setIsEditing}
                     createType={createType}
                 />
-                <ChannelListContainer 
-                    isCreating={isCreating}
-                    setIsCreating={setIsCreating}
-                    setCreateType={setCreateType}
-                    setIsEditing={setIsEditing}
-                />
+
             </Chat>
         </div>
     );
