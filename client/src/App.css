@@ -333,6 +333,9 @@
   .channel__container {
     height: 100%;
     width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+
   }
   
   .str-chat__thread {
@@ -404,7 +407,12 @@
   .channel-list__container {
     flex: 1 1 auto;
     display: flex;
+ 
     flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+
+
 
     /* height: 800px; */
 
@@ -413,11 +421,16 @@
   }
   
   .channel-list__sidebar {
+    border-radius: 30px;
     align-items: center;
-    justify-content: space-around;
+   
+    justify-content: space-between;
     flex: 0 1 auto;
     display: flex;
-    margin: 0px;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 40px;
+  
     padding: 0px;
 
     
@@ -430,9 +443,9 @@
   }
   
   .channel-list__sidebar__icon1 {
-    width: 44px;
-    height: 44px;
-    margin: 14px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
     background: linear-gradient(
         150.64deg,
         rgba(0, 0, 0, 0.1) 12.73%,
@@ -444,10 +457,15 @@
   }
   
   .channel-list__list__wrapper {
-      flex: 1 1 auto;
+      flex: 0 1 auto;
+      border-radius: 25px;
+
+      
+
     display: flex;
     flex-direction: column;
-    background: var(--primary-color);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    var(--primary-color);
     width: 240px;
   }
   
@@ -460,8 +478,8 @@
   }
   
   .channel-list__sidebar__icon2 {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     margin: 14px;
     background: linear-gradient(
         150.64deg,
@@ -483,7 +501,11 @@
   }
   
   .channel-list__header {
-    padding-left: 16px;
+    display: flex;
+    align-items: center;
+  
+    justify-content: center;
+    padding: 10px;
     height: 62px;
   }
   
@@ -1001,7 +1023,7 @@
   }
   
   .team-channel-list__header {
-    padding: 0 16px;
+    padding: 0 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1459,7 +1481,7 @@
   
   .team-message-input__wrapper .str-chat__textarea textarea {
     display: flex;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border: none;
     outline: none;
     font-family: Helvetica Neue, sans-serif;
@@ -1481,6 +1503,7 @@
     color: rgba(0, 0, 0, 0.2);
   }
   
+
   .team-message-input__icons {
     display: flex;
     justify-content: space-around;
@@ -1766,9 +1789,9 @@
     height: 70px;
     width: 20px;
     
-    background: #005fff;
+    background: #004ccc;
     position: absolute;
-    right: -2%;
+    right: 10%;
     top: 60%;
     border-radius: 20%;
     z-index: 2;
@@ -1781,8 +1804,8 @@
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    background: #005fff;
     height: 100%;
-    box-shadow: inset 100px 100px 100px rgb(255, 4, 4);
     position: absolute;
     width: 85%;
     top: 0%;
@@ -1793,9 +1816,13 @@
   
   .str-chat__input-flat {
     width: 100%;
-    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
+  .str-chat__input-flat .str-chat__textarea > textarea{
+    border-radius: 25px;
+  }
   @media screen and (max-width: 960px) {
     .channel-list__container {
       display: none;
@@ -1863,7 +1890,7 @@
     }
   }
   
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 959px) {
     .channel-list__container-toggle {
       right: -4%;
     }
@@ -1871,7 +1898,7 @@
 
   
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     .channel-preview__item.multi {
       width: 150px;
     }
